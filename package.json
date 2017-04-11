@@ -7,9 +7,17 @@
 		"test": "jest"
 	},
 	"dependencies": {
+		"lodash": "^4.17.4",
+		"mobx": "^3.1.9",
+		"mobx-react": "^4.1.7",
+		"mobx-utils": "^2.0.1",
+		"native-base": "^2.1.1",
 		"react": "16.0.0-alpha.6",
 		"react-native": "0.43.3",
-		"react-native-vector-icons": "^4.0.1"
+		"react-native-storage": "^0.1.5",
+		"react-native-vector-icons": "^4.0.1",
+		"react-navigation": "git+https://github.com/react-community/react-navigation.git#7edd9a7",
+		"tinycolor2": "^1.4.1"
 	},
 	"devDependencies": {
 		"babel-eslint": "^7.2.1",
