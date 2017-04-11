@@ -1,14 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": [
-        "./*"
-      ]
-    }
+    "experimentalDecorators": true
   },
   "exclude": [
     "node_modules"
