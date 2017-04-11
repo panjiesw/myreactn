@@ -1,0 +1,76 @@
+{
+	"name": "myreactn",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest"
+	},
+	"dependencies": {
+		"react": "16.0.0-alpha.6",
+		"react-native": "0.43.3"
+	},
+	"devDependencies": {
+		"babel-eslint": "^7.2.1",
+		"babel-jest": "19.0.0",
+		"babel-plugin-root-import": "^5.1.0",
+		"babel-plugin-transform-decorators-legacy": "^1.3.4",
+		"babel-preset-react-native": "1.9.1",
+		"babel-preset-react-native-stage-0": "^1.0.1",
+		"eslint-config-xo-react": "^0.11.1",
+		"eslint-import-resolver-babel-root-import": "git://github.com/adrianmcli/eslint-import-resolver-babel-root-import.git#718368a629ef7c181a12a647224823faba5ac5d3",
+		"eslint-plugin-import": "^2.2.0",
+		"eslint-plugin-react": "^6.10.3",
+		"jest": "19.0.2",
+		"react-test-renderer": "16.0.0-alpha.6",
+		"xo": "^0.18.1"
+	},
+	"jest": {
+		"preset": "react-native"
+	},
+	"xo": {
+		"parser": "babel-eslint",
+		"extends": [
+			"xo-react",
+			"plugin:import/warnings"
+		],
+		"envs": [
+			"jest"
+		],
+		"settings": {
+			"import/resolver": {
+				"babel-root-import": {},
+				"node": {
+					"extensions": [
+						".js",
+						".android.js",
+						".ios.js"
+					]
+				}
+			}
+		},
+		"rules": {
+			"capitalized-comments": 0,
+			"comma-dangle": [
+				"warn",
+				{
+					"arrays": "ignore",
+					"objects": "ignore",
+					"imports": "never",
+					"exports": "never",
+					"functions": "ignore"
+				}
+			],
+			"new-cap": 0,
+			"object-curly-spacing": [
+				"warn",
+				"always"
+			],
+			"react/forbid-component-props": 0,
+			"react/jsx-closing-bracket-location": 0,
+			"react/jsx-space-before-closing": 0,
+			"react/jsx-tag-spacing": 0,
+			"unicorn/filename-case": 0
+		}
+	}
+}

@@ -1,0 +1,25 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "tslint.enable": false,
+  "tslint.jsEnable": false,
+  "eslint.enable": false,
+  "xo.enable": true,
+  "css.validate": false,
+  "stylelint.enable": false,
+  "editor.insertSpaces": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "on",
+  "editor.detectIndentation": true,
+  "editor.rulers": [
+    120
+  ],
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.idea": true,
+    "**/.iml": true
+  }
+}
