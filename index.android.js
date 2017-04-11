@@ -1,7 +1,8 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Copyright (c) 2017 Panjie Setiawan Wicaksono
+ *
+ * This software is released under the MIT License.
+ * https://panjiesw.mit-license.org
  */
 
 import React, { Component } from 'react';

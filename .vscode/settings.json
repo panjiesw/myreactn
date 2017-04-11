@@ -21,5 +21,9 @@
     "**/.DS_Store": true,
     "**/.idea": true,
     "**/.iml": true
-  }
+  },
+  "licenser.author": "Panjie Setiawan Wicaksono",
+  "licenser.projectName": "myreactn",
+  "licenser.license": "MIT",
+  "licenser.useSingleLineStyle": false
 }
