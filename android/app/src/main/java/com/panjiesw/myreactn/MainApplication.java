@@ -1,4 +1,4 @@
-package com.myreactn;
+package com.panjiesw.myreactn;
 
 import android.app.Application;
 
