@@ -8,7 +8,7 @@
 import React, { Component, PropTypes } from 'react';
 import { View } from 'react-native';
 import { NavigationActions } from 'react-navigation';
-import { Form, Item, Input, Label, Button, Text } from 'native-base';
+import { Content, Form, Item, Input, Label, Button, Text } from 'native-base';
 import { autorunAsync } from 'mobx';
 import { observer, inject } from 'mobx-react';
 import AdaptiveStatusBar from '../../../components/AdaptiveStatusBar';
@@ -65,7 +65,7 @@ class Login extends Component {
 			if (authStore.isLoggedIn) {
 				navigation.dispatch(resetAction);
 			}
-		});
+		}, 500);
 	}
 
 	componentWillUnmount() {
@@ -77,7 +77,7 @@ class Login extends Component {
 
 	render() {
 		return (
-			<View style={styles.container}>
+			<Content padder contentContainerStyle={{ flex: 1, flexDirection: 'column', justifyContent: 'center' }}>
 				<AdaptiveStatusBar colorBehindStatusbar={'rgb(255,255,255)'} />
 				<View style={styles.spacer} />
 				<View style={styles.box}>
@@ -102,7 +102,7 @@ class Login extends Component {
 					</Button>
 				</View>
 				<View style={styles.spacer} />
-			</View>
+			</Content>
 		);
 	}
 }

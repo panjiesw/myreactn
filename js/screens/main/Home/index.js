@@ -5,32 +5,15 @@
  * https://panjiesw.mit-license.org
  */
 
-import React, { Component, PropTypes } from 'react';
-import { Container, Content, Text, Header, Left, Right, Body, Title } from 'native-base';
-import MenuButton from '../../../components/MenuButton';
+import React, { Component } from 'react';
+import { Content, Text } from 'native-base';
 
 class Home extends Component {
-	static propTypes = {
-		navigation: PropTypes.object.isRequired,
-	}
-
 	render() {
-		const { navigation } = this.props;
 		return (
-			<Container>
-				<Header>
-					<Left>
-						<MenuButton navigation={navigation} />
-					</Left>
-					<Body>
-						<Title>Home Header</Title>
-					</Body>
-					<Right />
-				</Header>
-				<Content padder>
-					<Text>Home</Text>
-				</Content>
-			</Container>
+			<Content padder>
+				<Text>Home</Text>
+			</Content>
 		);
 	}
 }

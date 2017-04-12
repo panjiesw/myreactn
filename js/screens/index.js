@@ -7,8 +7,10 @@
 
 import auth from './auth';
 import main from './main';
+import Empty from './Empty';
 
 export default {
 	auth,
 	main,
+	Empty
 };

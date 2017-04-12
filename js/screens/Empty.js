@@ -6,16 +6,14 @@
  */
 
 import React, { Component } from 'react';
-import { Content, Text } from 'native-base';
+import { Content } from 'native-base';
 
-class Other extends Component {
+class Empty extends Component {
 	render() {
 		return (
-			<Content padder>
-				<Text>Other</Text>
-			</Content>
+			<Content padder />
 		);
 	}
 }
 
-export default Other;
+export default Empty;
